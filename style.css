@@ -1,0 +1,131 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding-bottom: 500px;
+}
+
+h2 {
+  margin-bottom: 1.6rem;
+  text-align: center;
+  color: #333;
+}
+
+#box-shadow-generator {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#controls-container,
+#preview {
+  flex: 1;
+  padding: 2rem;
+}
+
+/* Controles */
+
+.form-control {
+  display: flex;
+  padding-bottom: 1.2rem;
+  margin-bottom: 1.2rem;
+  border-bottom: 1px dashed #ccc;
+}
+
+.form-control label {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.range-input {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.range-input input[type="range"] {
+  appearance: none;
+  width: 100%;
+  height: 24px;
+  background-color: #d3d3d3;
+  outline: none;
+}
+
+.range-input input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  height: 25px;
+  width: 25px;
+  background-color: #e9c60a;
+  cursor: pointer;
+}
+
+.reference-input {
+  display: flex;
+  align-items: center;
+}
+
+.reference-input p {
+  margin-left: 4px;
+}
+
+.form-control input[type="text"] {
+  height: 30px;
+  width: 30px;
+  margin-left: 1rem;
+  text-align: center;
+}
+
+#color-value {
+  width: 150px;
+}
+
+#inset {
+  width: 20px;
+  height: 20px;
+}
+
+/* Preview */
+
+#box {
+  width: 100%;
+  height: 300px;
+  background-color: #e9c80a;
+}
+
+/* Area de geração */
+
+#generator-rule {
+  text-align: center;
+}
+
+#generator-rule p {
+  margin-bottom: 0.5rem;
+}
+
+#rules-area {
+  background-color: #d3d3d3;
+  max-width: 1000px;
+  margin: 0 auto;
+  border: 2px solid #e9c60a;
+  padding: 1rem;
+}
+
+#rules-area input {
+  background-color: #d3d3d3;
+  border: none;
+  width: 50%;
+}
+
+#rules-area:hover {
+  cursor: pointer;
+  border: 2px solid red;
+}
+
+#copy {
+  width: 0;
+  height: 0;
+}
